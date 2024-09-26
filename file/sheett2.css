@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 350px;
+    font-style: normal;
+    font-size: 13px;
+    scroll-behavior: smooth;
+}     
+.container {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+span{
+    font-size: 25px;
+    color: aliceblue;
+}
+
+/* Atur tabel berada di tengah */
+.table-container {
+    display: flex;
+    justify-content: center; /* Posisikan tabel di tengah secara horizontal */
+}
+
+table {
+    width: 10px; /* Sesuaikan lebar tabel */
+    margin: 0 auto; /* Tambahkan margin otomatis di kiri dan kanan */
+    border-collapse: collapse; /* Gabungkan border untuk tampilan yang lebih rapi */
+}
+/* Untuk elemen table header dan table data */
+th, td {
+    padding: 5px; /* Berikan padding agar teks tidak terlalu rapat dengan border */
+    text-align: center; /* Rata tengah teks */
+    vertical-align: top; /* Rata tengah teks secara vertikal */
+}
+
+/* Kecilkan kolom Eksekusi */
+th.eksekusi-column, td.eksekusi-column {
+    width: 30px; /* Tentukan lebar yang diinginkan */
+    max-width: 30px;
+    text-align: center; /* Posisikan teks di tengah */
+}
+
+.form-outline{
+    margin-right: 5px; /* Sesuaikan margin agar lebih responsif */
+    margin-left: 375px;
+}
+/* Atur tata letak untuk halaman kecil */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 12px; /* Kurangi ukuran font pada layar kecil */
+    }
+
+    th, td {
+        padding: 5px; /* Kurangi padding pada layar kecil */
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+th.no-column {
+    padding-right: 20px; /* Sesuaikan nilai ini untuk menggeser ke kanan */
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 350px;
+    font-style: normal;
+    font-size: 13px;
+    scroll-behavior: smooth;
+}     
+.container {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    overflow-x: auto; /* Aktifkan scrolling horizontal jika tabel terlalu lebar */
+    width: 100%; /* Pastikan container mengambil lebar penuh */
+}
+
+span{
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.d-flex {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-wrap: wrap; /* Pastikan tombol bertumpuk di layar yang lebih kecil */
+    justify-content: flex-start;
+    margin-right: 0;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1); 
+    border: 1px solid; 
+    text-align: center;
+    vertical-align: top;
+    width: 100%; /* Paksa tabel untuk mengambil lebar penuh */
+    table-layout: auto; /* Biarkan kolom menyesuaikan berdasarkan konten */
+}
+
+.table th {
+    white-space: nowrap;
+    vertical-align: top;
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2px;
+        cursor: pointer;
+}
+
+/* Kolom Keterangan */
+.table td.keterangan-column {
+    max-width: 120px; /* Sesuaikan lebar sesuai kebutuhan */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
+    font-weight: bolder;
+    max-width: 150px; /* Kurangi lebar maksimal untuk penyesuaian lebih baik */
+}
+
+.table th.keterangan-column2 {
+    max-width: 80px; /* Sesuaikan lebar sesuai kebutuhan */
+    width: 80px; /* Tentukan lebar yang diinginkan */
+    text-align: center; /* Tengah-kan teks */
+
+}
+
+/* Kolom Nama Tug */
+.table td.nama-column {
+    max-width: 450px; /* Menambah lebar kolom Nama Tug */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal; 
+    text-align: center;
+    max-width: 300px; /* Kurangi lebar maksimal */
+}
+
+/* Kolom Telaahan */
+.table td.telaahan-column,
+.table td.laphastug-column {
+    max-width: 200px; /* Sesuaikan lebar sesuai kebutuhan */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+/* Kolom Kode */
+.table td.kode {
+    max-width: 80px; /* Sesuaikan lebar sesuai kebutuhan */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+
+.table td.no-reg {
+    padding: 0;
+}
+
+.table td.sprintug-column {
+    white-space: normal;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 2px;
+}
+
+.table td, .table th {
+    height: 50px; /* Atur sesuai kebutuhan */
+    vertical-align: top;
+    padding: 12px; /* Sesuaikan padding sesuai kebutuhan */
+    word-wrap: break-word; /* Pecah teks panjang */
+    white-space: normal; /* Izinkan teks untuk membungkus */
+}
+
+.btn {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.form-outline{
+    margin-right: 5px; /* Sesuaikan margin agar lebih responsif */
+    margin-left: 375px;
+}
+
